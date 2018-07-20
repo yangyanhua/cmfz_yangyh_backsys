@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="cmfz_yangyh_backsys:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="cmfz_yangyh_backsys.war">
+      <element id="artifact" artifact-name="cmfz_yangyh_backsys:war exploded" />
+    </root>
+  </artifact>
+</component>

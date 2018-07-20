@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.baizhi.yangyh.dao.MenuDao">
+
+
+	<resultMap id="MenuMap" type="com.baizhi.yangyh.entity.Menu">
+		<id column="tid" property="id"></id>
+		<result column="ttitle" property="title"></result>
+		<result column="thref" property="href"></result>
+		<result column="ticonCls" property="iconCls"></result>
+		<result column="tpid" property="pid"></result>
+		<collection property="children" ofType="com.baizhi.yangyh.entity.Menu">
+			<id column="t2tid" property="id"></id>
+			<result column="t2title" property="title"/>
+			<result column="t2href" property="href"/>
+			<result column="t2iconCls" property="iconCls"/>
+			<result column="t2pid" property="pid"/>
+		</collection>
+
+	</resultMap>
+	<!--自定义SQL语句片段-->
+	<sql id="sql_menu">
+      t.id as tid,t.title as ttitle,t.href as thref,t.iconcls as ticoncls,t.pid as tpid,
+      t2.id as t2id,t2.title as t2title,t2.href as t2href,t2.iconcls as t2iconcls,t2.pid as t2pid
+    </sql>
+
+	<select id="selectMenus" resultMap="MenuMap">
+		select <include refid="sql_menu"/>
+		from menu t inner join menu t2 on t.id = t2.pid
+	</select>
+
+
+
+	
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

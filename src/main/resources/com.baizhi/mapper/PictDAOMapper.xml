@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.baizhi.yangyh.dao.PictDAO">
+
+    <!--分页展示所有-->
+    <select id="selectAll" resultType="com.baizhi.yangyh.entity.Pict">
+        select * from p_pict limit #{begin} , #{end}
+    </select>
+
+    <!--查询所有条数-->
+    <select id="countDAO" resultType="java.lang.Integer">
+        select count(*) from p_pict;
+    </select>
+
+    <!--添加轮播信息-->
+    <insert id="addPict">
+        INSERT INTO p_pict(por,ptime,pstatus,pict,utime)VALUES (#{por},now(),#{pstatus},#{pict},now())
+    </insert>
+
+    <!--修改第一次删除根据ID和状态修改轮播图展示状态-->
+    <update id="updatePict">
+        update p_pict set pstatus = #{pstatus} where pid = #{pid}
+    </update>
+
+    <!--第二次点击删除-->
+    <delete id="delPict">
+        delete from p_pict where pid = #{pid}
+    </delete>
+</mapper>

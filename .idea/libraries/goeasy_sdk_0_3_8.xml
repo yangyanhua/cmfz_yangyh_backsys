@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="goeasy-sdk-0.3.8">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/webapp/back/static/goeasy-sdk-0.3.8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

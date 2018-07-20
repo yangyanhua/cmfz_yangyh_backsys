@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.baizhi.yangyh.dao.ArticleDao">
+
+    <!--分页展示所有-->
+    <select id="selectAll" resultType="com.baizhi.yangyh.entity.Article">
+        select * from t_Article where master_id=#{mid} limit #{begin} , #{end}
+    </select>
+
+    <!--查询所有条数-->
+    <select id="countDAO" resultType="java.lang.Integer">
+        select count(*) from _Article;
+    </select>
+
+
+
+    <!--删除-->
+    <delete id="delArticle">
+        delete from t_Article where aid = #{aid}
+    </delete>
+</mapper>

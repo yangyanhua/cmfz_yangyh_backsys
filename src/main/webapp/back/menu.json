@@ -1,0 +1,119 @@
+[
+  {
+    "name": "管理员管理",
+    "iconCls": "icon-user_suit_black",
+    "href": "",
+    "children": [
+      {
+        "name": "管理员列表",
+        "iconCls": "icon-user_gray_cool",
+        "href": "index.jsp"
+      }
+    ]
+  },
+  {
+    "name": "用户管理",
+    "iconCls": "icon-user",
+    "href": "",
+    "children": [
+      {
+        "name": "用户信息",
+        "iconCls": "icon-user",
+        "href": "user.jsp"
+      },
+      {
+        "name": "用户反馈",
+        "iconCls": "icon-page_white_edit",
+        "href": "userlist.jsp"
+      }
+    ]
+  },
+  {
+    "name": "轮播图","iconCls": "icon-box_picture","href": "",
+    "children": [
+      {
+        "name": "轮播图列表",
+        "iconCls": "icon-box_picture",
+        "href": "pict.jsp"
+      }
+    ]
+  },
+  {
+    "name": "专辑管理",
+    "iconCls": "icon-bullet_wrench",
+    "href": "",
+    "children": [
+      {
+        "name": "专辑列表",
+        "iconCls": "icon-database_yellow",
+        "href": "index.jsp"
+      }
+    ]
+  },
+  
+  {
+    "name": "上师管理管理",
+    "iconCls": "icon-cart",
+    "href": "",
+    "children": [
+      {
+        "name": "上师列表",
+        "iconCls": "icon-cart",
+        "href": "/edit/userlist.jsp"
+      }
+    ]
+  },
+  {
+    "name": "文章管理",
+    "iconCls": "icon-chart_bar_edit",
+    "href": "",
+    "children": [
+      {
+        "name": "文章列表",
+        "iconCls": "icon-user_comment_2",
+        "href": "article.jsp"
+      }
+    ]
+  },
+  {
+  "name": "功课管理",
+  "iconCls": "icon-tag_orange",
+  "href": "",
+  "children": [
+    {
+      "name": "功课列表",
+      "iconCls": "icon-tag_orange",
+      "href": "/edit/userlist.jsp"
+    }
+  ]
+  },
+  {
+    "name": "日志管理",
+    "iconCls": "icon-anchor",
+    "href": "",
+    "children": [
+      {
+        "name": "日志列表",
+        "iconCls": "icon-anchor",
+        "href": "/edit/userlist.jsp"
+      }
+    ]
+  },
+  {
+    "name": "统计分析",
+    "iconCls": "icon-anchor",
+    "href": "",
+    "children": [
+      {
+        "name": "近半年用户注册信息","iconCls": "icon-anchor","href": "/edit/userlist.jsp"
+      },
+      {
+        "name": "用户地域分布",
+        "iconCls": "icon-anchor",
+        "href": "echarts-map.jsp"
+      }
+    ]
+  }
+]
+
+

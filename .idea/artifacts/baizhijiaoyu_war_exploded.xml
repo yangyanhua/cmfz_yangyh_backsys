@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="baizhijiaoyu:war exploded">
+    <output-path>E:/baizhijiaoyu/target/baizhijiaoyu</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="baizhijiaoyu" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="E:/baizhijiaoyu/target/baizhijiaoyu/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="baizhijiaoyu/web/Web" />
+    </root>
+  </artifact>
+</component>

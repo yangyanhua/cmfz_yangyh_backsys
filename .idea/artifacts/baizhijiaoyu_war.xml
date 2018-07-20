@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="baizhijiaoyu:war">
+    <output-path>E:/baizhijiaoyu/target</output-path>
+    <root id="archive" name="baizhijiaoyu.war">
+      <element id="artifact" artifact-name="baizhijiaoyu:war exploded" />
+    </root>
+  </artifact>
+</component>
