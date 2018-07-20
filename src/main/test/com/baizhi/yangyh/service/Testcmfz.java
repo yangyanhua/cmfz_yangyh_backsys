@@ -66,7 +66,7 @@ public class Testcmfz extends TestCase {
    @Test
    public void testPuser(){
      List<PUser> list = puserService.queryAllPuser();
-    //  List<PUser> list = puserDao.selectAllpage(1, 5);
+     List<PUser> list2 = puserDao.selectAllpage(1, 5);
       //List<PUser> list = puserDao.selectAll();
 
 
